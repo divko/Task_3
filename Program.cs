@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,38 @@ namespace Task_3
         {//Задание 1. Приложение по определению чётного или нечётного числа
          
 
-            Console.WriteLine("\nВведите число:");
-            int userNumber = int.Parse(Console.ReadLine());
-            if (userNumber %2 == 0)  { Console.WriteLine("Число четное"); }
-            else { Console.WriteLine("Число нечетное."); }
+            //Console.WriteLine("\nВведите число:");
+            //int userNumber = int.Parse(Console.ReadLine());
+            //if (userNumber %2 == 0)  { Console.WriteLine("Число четное"); }
+            //else { Console.WriteLine("Число нечетное."); }
+            //Console.ReadKey();
+
+            //            Задание 2.Программа подсчёта суммы карт в игре «21»
+            
+
+            Console.WriteLine("\nПриветствую в игре '21'. Сколько на руках карт?");
+            
+            int nvCount= int.Parse(Console.ReadLine());
+
+            int nvSum = 0;
+
+            for (int i = 0; i < nvCount; i++) 
+            { Console.Write("Введите номинал следующей карты ");
+
+             string  nvUser = (Console.ReadLine());  
+                    switch (nvUser)
+                {
+                    case "K": nvSum = nvSum + 10;break;
+                    case "J": nvSum = nvSum + 10; break;
+                    case "Q": nvSum = nvSum + 10; break;
+                    case "T": nvSum = nvSum + 10; break;
+                    default: nvSum = nvSum + int.Parse(nvUser); break;
+                }
+                
+
+
+            }
+            Console.WriteLine("Сумма карт на руках пользователя: " + nvSum);
             Console.ReadKey();
         }
     }
