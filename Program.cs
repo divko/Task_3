@@ -11,17 +11,16 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            #region Task_3_1 Задание 1. Приложение по определению чётного или нечётного числа
+            #region Task_3_1 Задание 1.Приложение по определению чётного или нечётного числа
 
 
             //Console.WriteLine("\nВведите число:");
             //int userNumber = int.Parse(Console.ReadLine());
-            //if (userNumber %2 == 0)  { Console.WriteLine("Число четное"); }
+            //if (userNumber % 2 == 0) { Console.WriteLine("Число четное"); }
             //else { Console.WriteLine("Число нечетное."); }
             //Console.ReadKey();
-            #endregion Task_3_1
+            #endregion
             #region Task_3_2 Задание 2.Программа подсчёта суммы карт в игре «21»
-
 
             //Console.WriteLine("\nПриветствую в игре '21'. Сколько на руках карт?");
 
@@ -47,7 +46,7 @@ namespace Task_3
             //}
             //Console.WriteLine("Сумма карт на руках пользователя: " + nvSum);
             //Console.ReadKey();
-            #endregion Task_3_2
+            #endregion
             #region Task_3_3 Задание 3.Проверка простого числа
 
 
@@ -55,17 +54,32 @@ namespace Task_3
             //Console.WriteLine("Введите целое число");
             //int nUser = int.Parse(Console.ReadLine());
             //int nvCount = 1;
-            //while (nvCount < nUser-1) 
+            //while (nvCount <= nUser - 1)
             //{
 
-            //    if (nUser%2 == 0) bCondition = true;
+            //    if (nUser % 2 == 0) bCondition = true;
             //    nvCount++;
             //}
             //if (bCondition == false)
-            //Console.WriteLine("Число простое"); 
+            //    Console.WriteLine("Число простое");
             //else Console.WriteLine("Число не простое");
-            //    Console.ReadKey();
-            #endregion Task_3_3
+            //Console.ReadKey();
+            #endregion
+            #region Task_3_4 Задание 4.Наименьший элемент в последовательности
+           
+            //Console.WriteLine("Введите длину последовательности");
+            //int nvLengt = int.Parse(Console.ReadLine());
+            //int nvMin = int.MaxValue;
+            //Console.WriteLine("Введите последовательность целых чисел (как положительных, так и отрицательных");
+            //for (int i = 1; i <= nvLengt; i++)
+            //{ int nvUser = int.Parse(Console.ReadLine());
+            //    if (nvUser < nvMin)  nvMin = nvUser;  
+            //}
+            //Console.WriteLine("Наименьшее число: " + nvMin);
+            //Console.ReadKey();
+
+            #endregion
+
         }
     }
 }
