@@ -66,7 +66,7 @@ namespace Task_3
             //Console.ReadKey();
             #endregion
             #region Task_3_4 Задание 4.Наименьший элемент в последовательности
-           
+
             //Console.WriteLine("Введите длину последовательности");
             //int nvLengt = int.Parse(Console.ReadLine());
             //int nvMin = int.MaxValue;
@@ -79,7 +79,43 @@ namespace Task_3
             //Console.ReadKey();
 
             #endregion
+            #region Task_3_5 Задание 5.Игра «Угадай число»
+            
+            //Console.WriteLine("Поиграем в \" Угадай число \", \n Введите максимальное число диапазона");
+            //int nvMax = int.Parse(Console.ReadLine());
+            //Random rand = new Random();
+            //int iiNumber = rand.Next(1, nvMax);
+            //int nvCount = 0;
+            //string userNumber;
 
+            //while (true)
+            //{
+            //    Console.Write("\nВведите число: ");
+            //    nvCount++;
+            //     userNumber = Console.ReadLine();
+            //    if (userNumber == string.Empty) 
+            //    {   
+            //        Console.WriteLine("Устал? Загаданное число: " + iiNumber);
+            //        Console.ReadKey();
+            //        break;
+            //    }
+
+            //    if (Convert.ToInt32(userNumber) < iiNumber)
+            //    {
+            //        Console.WriteLine("Введенное число меньше загаданного. Попробуйте ещё раз");
+            //    }
+            //    else if (Convert.ToInt32(userNumber) > iiNumber)
+            //    {
+            //        Console.WriteLine("Введенное число больше загаданного. Попробуйте ещё раз");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"Поздравляю, число угадано! Число попыток: {nvCount}.");
+            //        Console.ReadKey();
+            //        break;
+            //    }
+            //}
+            #endregion
         }
     }
 }
